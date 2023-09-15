@@ -5,4 +5,9 @@
     <select id="selectList" resultType="org.example.domain.Student">
         select * from student
     </select>
+
+    <insert id="insertStudent" parameterType="org.example.domain.Student">
+        INSERT INTO student (name,age)
+        VALUES (#{name},#{age})
+    </insert>
 </mapper>
